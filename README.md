@@ -1,4 +1,4 @@
-# ArchaeaHGT: A Snakemake Workflow for Detecting Horizontal Gene Transfer in Archaeal Genomes  
+# ArchaeaHGT:Snakemake Workflows for Detecting Horizontal Gene Transfer in Archaeal Genomes  
 
 ## Overview  
 This repository contains a **Snakemake workflow** developed as part of a **Praktikum** under the supervision of **Prof. Dr. Rattei**. The workflow enables **automated detection of horizontal gene transfer (HGT)** in archaeal genomes, particularly from the **human archaeome**, using a combination of **phylogenetic and sequence composition-based approaches**.  
