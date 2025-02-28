@@ -3,7 +3,7 @@ The different steps (HGTector2 analysis, collection of results, and adding detai
 
 <br>
 
-# HGTector2 Snakemake Workflow
+# HGTector2 main Snakemake Workflow
 
 This Snakemake workflow automates **HGTector2** processing, from homology search to analysis, using configurations defined in a YAML file.
 
