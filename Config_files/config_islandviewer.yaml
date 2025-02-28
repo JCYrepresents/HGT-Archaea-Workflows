@@ -1,4 +1,4 @@
-# config.yaml
+# config_islandviewer.yaml
 
 # Input directory containing .gbk files
 input_folder: "/home/king/Desktop/Island4_1/Genomes"
