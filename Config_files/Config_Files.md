@@ -29,11 +29,8 @@ This YAML configuration file defines the parameters and paths required to run **
 - **`noise`**: Noise reduction parameter (**default: 0**).
 
 ## Usage
-Ensure all paths and parameters are correctly configured before running HGTector2 for. For a detailed description of analysis parameters see HGTector2 repo: https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md
+Ensure all paths and parameters are correctly configured before running the **HGTector2 main Snakemake workflow**.For a detailed description of analysis parameters see HGTector2 repo: https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md
 
-```bash
-hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/database/diamond/db/db.dmnd --threads 7
-```
 <br>
 
 # config_HGTector2_analyze.yaml for the HGTector2 analysis rerun snakemake workflow
@@ -49,7 +46,7 @@ This YAML file extends the **HGTector2 configuration** by specifying additional 
 - **`self_tax` & `close_tax`**: Define specific taxonomic groups for classification (optional).
 
 ## Usage
-Ensure the paths and new parameters are correctly configured before running **HGTector2 rerun analysis workflow**.
+Ensure the paths and new parameters are correctly configured before running **HGTector2 rerun analysis Snakemake workflow**.
 
 For a full reference on parameter settings, visit the [HGTector2 documentation](https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md).
 
@@ -65,11 +62,7 @@ This YAML configuration file defines the paths required for **collecting and mer
 - **`final_results`**: Directory where the **final merged results** will be stored.
 
 ### Usage
-Ensure the paths are correctly set before running the collection script:
-
-```bash
-python collect_results.py --analyze_dir analyze_dir/test_mainflow --output final_results/final_test
-```
+Ensure the paths are correctly set before running the **Snakemake collect result script**.
 
 For modifications or optimizations, update the YAML file accordingly and rerun the process.
 
@@ -81,7 +74,7 @@ This YAML configuration file specifies the directories and file paths required f
 
 ### Important Note
 
-- **Ensure that .faa** files contain gene names and product annotations in the fasta header for the script to function correctly.
+- **Ensure that .faa** files contain gene names and product annotations in the fasta header before running the **Adding details Snakemake script** to function correctly.
 
 ### Configuration Overview
 
@@ -114,13 +107,13 @@ This YAML configuration file specifies paths required for running the **IslandVi
 
 ### Directories
 - **`input_folder`**: Path to the directory containing **GenBank (.gbk) files**.
-- **`output_folder`**: Directory where **IslandViewer results** will be stored.
+- **`output_folder`**: Directory where **IslandViewer4 results** will be stored.
 
 ### Script Path
-- **`islandviewer_script`**: Path to the **IslandViewer2 script** (modify if needed).
+- **`islandviewer_script`**: Path to the **IslandViewer2.py script** (modify if needed).
 
 ## Usage
-Ensure the paths are correctly set before running the **IslandViewer analysis**.
+Ensure the paths are correctly set before running the **IslandViewer4 Snakemake script**.
 
 For modifications, update the YAML file accordingly and rerun the process.
 
