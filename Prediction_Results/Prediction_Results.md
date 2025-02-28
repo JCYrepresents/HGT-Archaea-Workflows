@@ -1,9 +1,11 @@
 # Prediction Results Overview
 
-Overview of the **HGTector2** and **IslandViewer4** prediction results.
+Overview of the **HGTector2** and **IslandViewer4** prediction results applied on the human gut archaeome dataset.
+-HGTector2 (686 genomes)
+-IslandViewer4 (7 genomes)
 
 ## HGTector2 Results
-Both the **final processed results** for HGTector2 and IslandViewer4, as well as the **raw results from the HGTector2 analyze step** (686 genomes), are available in the corresponding folder.The processed prediction results are available in .tsv/.csv format and as Excel files for easier data handling and visualization. If one wants to rerun the full workflow or access the raw homology search results of HGTector2, use the following Google Drive link:
+Both the **final processed results** for HGTector2 and IslandViewer4, as well as the **raw results from the HGTector2 analyze step** (686 genomes), are available in the corresponding folder. The processed prediction results are available in .tsv/.csv format and as Excel files for easier data handling and visualization. If one wants to rerun the full workflow or access the raw homology search results of HGTector2, use the following Google Drive link:
 
 [Google Drive - HGTector2 homology search](https://drive.google.com/drive/folders/1lK4vnQcEtd2CXB5jZRgTd8OBsiibe5au?usp=sharing) 
 This file has approximately 13GB!
@@ -33,5 +35,6 @@ IslandViewer4 generates a downloadable results table that provides genomic islan
 - **External annotations**: Additional reference data for further analysis.
 
 The combined analysis results for 7 genomes can be found in the corresponding Folder.
+
 For any further analysis or interpretation, refer to the respective documentation of **HGTector2** and **IslandViewer4**.
 
