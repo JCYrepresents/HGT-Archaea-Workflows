@@ -1,6 +1,6 @@
-# For HGTector2 main workflow 
+# For HGTector2 
 
-## config_HGTector2.yaml
+## config_HGTector2.yaml for the HGTector2 main snakemake workflow
 This YAML configuration file defines the parameters and paths required to run **HGTector2** for detecting horizontal gene transfer (HGT) events.
 
 ## Configuration Overview
