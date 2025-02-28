@@ -32,5 +32,6 @@ IslandViewer4 generates a downloadable results table that provides genomic islan
 - **Gene details**: Locus, position, strand, and product information.
 - **External annotations**: Additional reference data for further analysis.
 
+The combined results of 7 genomes can be found in the corresponding Folder.
 For any further analysis or interpretation, refer to the respective documentation of **HGTector2** and **IslandViewer4**.
 
