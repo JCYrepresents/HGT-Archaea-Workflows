@@ -63,6 +63,8 @@ Snakemake should be installed **in the base Conda environment** to properly mana
    ```bash
    conda create -n hgtector -c conda-forge python=3.6 pyyaml pandas matplotlib scikit-learn biopython bioconda::diamond
 
+## Reference Database
+In this project, the **pre-built reference database** from the latest **HGTector repository release** was used. To ensure reproducibility, users can download and set up the latest available version by following the instructions in the [HGTector repository](https://github.com/qiyunlab/HGTector/blob/master/doc/database.md#pre-built-databases)
 
 ## Overview documentation
 - [Helper scirpts](Helper_scripts/Helper_Scripts.md)
