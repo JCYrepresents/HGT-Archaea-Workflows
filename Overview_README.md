@@ -67,11 +67,11 @@ Snakemake should be installed **in the base Conda environment** to properly mana
 In this project, the **pre-built reference database** from the latest **HGTector repository release** was used. To ensure reproducibility, users can download and set up the latest available version by following the instructions in the [HGTector repository](https://github.com/qiyunlab/HGTector/blob/master/doc/database.md#pre-built-databases)
 
 ## Overview documentation
-- [Helper scirpts](Helper_scripts/Helper_Scripts.md)
-- [Config files](Config_files/Config_Files.md)
 - [HGTector2 workflows](Snakemake_Workflows_HGTector2/HGTector2_workflows.md)
-- [GO-terms](Helper_scripts/GO/GO_annotation.md)
 - [IslandViewer4 workflow](Snakemake_Workflow_Islandviewer4/IslandViewer4_workflow.md)
+- [Config files](Config_files/Config_Files.md)
+- [Helper scirpts](Helper_scripts/Helper_Scripts.md)
+- [GO-terms](Helper_scripts/GO/GO_annotation.md)
 - [Prediction Result](Prediction_Results/Prediction_Results.md)
 
 
