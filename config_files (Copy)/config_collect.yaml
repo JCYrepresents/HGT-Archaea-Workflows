@@ -1,5 +1,0 @@
-# config.yaml
-
-analyze_dir: "analyze_dir/test_mainflow"  # Path to analyzed results
-final_results: "final_results/final_test"  # Output directory for final merged results
-

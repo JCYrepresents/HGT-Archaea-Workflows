@@ -1,3 +1,0 @@
-GUT_GENOME139944_00142	-0.119395	Terrabacteria group
-GUT_GENOME139944_00901	0.618894	cellular organisms
-GUT_GENOME139944_01279	0.593106	cellular organisms

@@ -1,0 +1,2 @@
+GUT_GENOME170711_00177	-0.154809	Terrabacteria group
+GUT_GENOME170711_01174	0.311661	cellular organisms

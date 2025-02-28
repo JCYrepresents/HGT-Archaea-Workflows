@@ -1,0 +1,3 @@
+GUT_GENOME259685_00943	0.718878	cellular organisms
+GUT_GENOME259685_01151	0.817488	cellular organisms
+GUT_GENOME259685_01188	0.75844	Erysipelatoclostridium

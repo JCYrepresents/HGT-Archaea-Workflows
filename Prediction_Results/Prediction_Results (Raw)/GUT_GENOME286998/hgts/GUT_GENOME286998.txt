@@ -1,0 +1,13 @@
+M-alvus_271T0_23scaf_23con_00280	0.656778	Bacteria
+M-alvus_271T0_23scaf_23con_00282	0.0432078	Bacteria
+M-alvus_271T0_23scaf_23con_00325	0.699401	Bacteria
+M-alvus_271T0_23scaf_23con_00326	0.704084	Bacteria
+M-alvus_271T0_23scaf_23con_00528	0.513637	Bacteria
+M-alvus_271T0_23scaf_23con_00581	0.364096	Bacteria
+M-alvus_271T0_23scaf_23con_00876	0.645978	cellular organisms
+M-alvus_271T0_23scaf_23con_00893	0.661203	Bacteria
+M-alvus_271T0_23scaf_23con_01040	0.700421	Bacteria
+M-alvus_271T0_23scaf_23con_01041	0.194436	Bacteria
+M-alvus_271T0_23scaf_23con_01380	0.701007	Spirochaetales
+M-alvus_271T0_23scaf_23con_01402	0.444604	Bacteria
+M-alvus_271T0_23scaf_23con_01403	0.685346	Bacteria

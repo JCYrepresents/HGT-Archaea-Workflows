@@ -1,3 +1,0 @@
-GUT_GENOME139935_00004	0.322526	cellular organisms
-GUT_GENOME139935_00612	0.327463	Terrabacteria group
-GUT_GENOME139935_01171	0.275555	cellular organisms

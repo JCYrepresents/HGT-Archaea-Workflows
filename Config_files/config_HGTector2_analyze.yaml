@@ -1,0 +1,27 @@
+# Directory containing existing HGTector search results
+search_dir: "/root/search_dir/test_mainflow"  # Replace with your actual path
+
+# Output directory for HGTector analyze results
+analyze_dir: /root/analyze_dir/test_mainflow/2ndrun  # Replace with your actual path
+
+# Database settings
+database:
+  taxdump: "/root/database/hgtdb_20230102/taxdump/"  # Replace with actual taxdump path
+  
+#HGTector conda
+hgtector:
+  conda_env: "/root/anaconda3/envs/hgtector"
+
+
+# Analysis parameters for HGTector
+analysis_params:
+  bandwidth: "grid"
+  donor_name: true
+  evalue: 1e-50
+  identity: 50
+  coverage: 50
+  silhouette: 0
+  noise: 0
+  self_tax:    # Example TaxID (optional)
+  close_tax:   # Example TaxID (optional)
+

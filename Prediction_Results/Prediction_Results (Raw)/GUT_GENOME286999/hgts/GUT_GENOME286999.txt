@@ -1,0 +1,58 @@
+M-intestinalis_183T6_24scaf_24con_00060	0.345848	Eubacteriales
+M-intestinalis_183T6_24scaf_24con_00063	0.6072	Bacteria
+M-intestinalis_183T6_24scaf_24con_00065	0.647497	Bacteria
+M-intestinalis_183T6_24scaf_24con_00181	0.667578	Firmicutes
+M-intestinalis_183T6_24scaf_24con_00185	0.555517	Bacteria
+M-intestinalis_183T6_24scaf_24con_00186	0.612233	cellular organisms
+M-intestinalis_183T6_24scaf_24con_00187	0.633218	Bacteria
+M-intestinalis_183T6_24scaf_24con_00193	0.651889	cellular organisms
+M-intestinalis_183T6_24scaf_24con_00204	0.506872	Bacteria
+M-intestinalis_183T6_24scaf_24con_00216	0.657932	cellular organisms
+M-intestinalis_183T6_24scaf_24con_00246	0.562058	Firmicutes
+M-intestinalis_183T6_24scaf_24con_00249	0.558839	cellular organisms
+M-intestinalis_183T6_24scaf_24con_00251	0.247906	Firmicutes
+M-intestinalis_183T6_24scaf_24con_00262	0.631799	Bacteria
+M-intestinalis_183T6_24scaf_24con_00288	0.571496	Terrabacteria group
+M-intestinalis_183T6_24scaf_24con_00505	0.388521	Firmicutes
+M-intestinalis_183T6_24scaf_24con_00733	0.438729	Bacteria
+M-intestinalis_183T6_24scaf_24con_00745	0.651125	Bacteria
+M-intestinalis_183T6_24scaf_24con_00810	0.579141	cellular organisms
+M-intestinalis_183T6_24scaf_24con_00835	0.667742	Bacteria
+M-intestinalis_183T6_24scaf_24con_00905	0.656772	Eubacteriales
+M-intestinalis_183T6_24scaf_24con_00977	0.608932	Bacteria
+M-intestinalis_183T6_24scaf_24con_01003	0.648451	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01088	0.442245	Bacteria
+M-intestinalis_183T6_24scaf_24con_01109	0.626817	Bacteria
+M-intestinalis_183T6_24scaf_24con_01111	0.574978	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01194	0.530273	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01222	0.639604	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01225	0.62747	Acidiplasma cupricumulans
+M-intestinalis_183T6_24scaf_24con_01329	0.347704	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01336	0.633238	Anaerotignum
+M-intestinalis_183T6_24scaf_24con_01368	0.588897	Eubacteriales incertae sedis
+M-intestinalis_183T6_24scaf_24con_01371	0.655	Eubacteriales incertae sedis
+M-intestinalis_183T6_24scaf_24con_01403	0.670981	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01470	0.665322	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01471	0.535119	Eubacteriales
+M-intestinalis_183T6_24scaf_24con_01474	0.6706	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01475	0.314959	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01476	0.618115	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01546	0.668048	Eubacteriales
+M-intestinalis_183T6_24scaf_24con_01547	0.450706	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01550	0.59543	Bacteria
+M-intestinalis_183T6_24scaf_24con_01565	0.591504	Bacteria
+M-intestinalis_183T6_24scaf_24con_01567	0.59041	Bacteria
+M-intestinalis_183T6_24scaf_24con_01568	0.650806	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01570	0.465034	Bacteria
+M-intestinalis_183T6_24scaf_24con_01571	0.629406	Bacteria
+M-intestinalis_183T6_24scaf_24con_01597	0.648211	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01632	0.542169	cellular organisms
+M-intestinalis_183T6_24scaf_24con_01664	0.331632	Terrabacteria group
+M-intestinalis_183T6_24scaf_24con_01669	0.378639	Eubacteriales
+M-intestinalis_183T6_24scaf_24con_01681	0.653348	Bacteria
+M-intestinalis_183T6_24scaf_24con_01693	0.630535	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01694	0.615076	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01746	0.531147	Firmicutes
+M-intestinalis_183T6_24scaf_24con_01754	0.520413	Eubacteriales
+M-intestinalis_183T6_24scaf_24con_01796	0.671013	Bacteria
+M-intestinalis_183T6_24scaf_24con_01838	0.342761	Bacteria

@@ -1,7 +1,0 @@
-# config.yaml
-
-# Input and output directories
-input_dir: "output_faa"  # Directory containing .faa annotation files
-merged_csv: "final_results/final_test/merged_results.csv"  # Input CSV before expansion
-final_csv: "final_results/final_test/final_output.csv"  # Output CSV after annotation expansion
-
