@@ -72,7 +72,7 @@ In this project, the **pre-built reference database** from the latest **HGTector
 - [Config files](Config_files/Config_Files.md)
 - [Helper scirpts](Helper_scripts/Helper_Scripts.md)
 - [GO-terms](Helper_scripts/GO/GO_annotation.md)
-- [Prediction Result](Prediction_Results/Prediction_Results.md)
+- [Prediction Results](Prediction_Results/Prediction_Results.md)
 
 
 ## Installation   
