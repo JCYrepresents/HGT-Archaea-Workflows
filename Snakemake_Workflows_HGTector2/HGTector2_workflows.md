@@ -2,6 +2,7 @@
 The different steps (HGTector2 analysis, collection of results, and adding details) are purposely separated so that users can extract data at any stage without triggering subsequent steps. This modular approach allows flexibility in processing results without requiring the full workflow to run.
 
 <br>
+
 # HGTector2 Snakemake Workflow
 
 This Snakemake workflow automates **HGTector2** processing, from homology search to analysis, using configurations defined in a YAML file.
