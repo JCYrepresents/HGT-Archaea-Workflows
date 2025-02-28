@@ -1,4 +1,6 @@
-# For HGTector2 
+# For HGTector2 main workflow 
+
+##config_HGTector2.yaml
 
 This YAML configuration file defines the parameters and paths required to run **HGTector2** for detecting horizontal gene transfer (HGT) events.
 
