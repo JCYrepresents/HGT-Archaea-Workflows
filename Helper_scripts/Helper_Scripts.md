@@ -1,25 +1,22 @@
 # Helper Scripts
 
 ## For HGTector2 
-# GFF to FAA Converter
+### GFF to FAA Converter
 
 This script extracts coding sequences (CDS) from GFF files, translates them into protein sequences, and outputs them as FASTA (.faa) files. It also logs any missing sequence IDs.
 
-## Features
+### Features
 - Extracts CDS regions from **GFF** files.
 - Translates nucleotide sequences into **protein sequences**.
 - Includes **gene** and **product** annotations in FASTA headers.
 - Supports **batch conversion** of multiple GFF files.
 - Logs missing sequence IDs for debugging.
 
-## Usage
-
+### Usage
 Run the script from the command line:
-
 ```bash
 python batch_gff_to_faa.py <input_directory> <output_directory> <log_file>
 ```
-
 ### Arguments:
 - `<input_directory>`: Folder containing GFF files.
 - `<output_directory>`: Folder where FAA files will be saved.
