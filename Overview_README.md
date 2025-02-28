@@ -49,7 +49,7 @@ HGTector2 relies on several external software packages. Before installation, ens
   - scikit-learn
   - **Biopython** (for the helper scripts)
 
-## Installation Instructions
+## Dependencies Instructions
 
 1. Install Snakemake (In Base Conda Environment)
 
