@@ -13,7 +13,7 @@ This Snakemake workflow automates **IslandViewer4** analysis by processing GenBa
 ## Key Directories
 
 - **`islandviewer_script`**: Path to the **IslandViewer2.py script** used for analysis.
-- **`input_folder`**: Directory containing **GenBank (*`.gbk`* files**.
+- **`input_folder`**: Directory containing **GenBank (*`.gbk`* files**).
 - **`output_folder`**: Directory where **IslandViewer4 job tokens** will be stored.
 
 ## IslandViewer2 Script
