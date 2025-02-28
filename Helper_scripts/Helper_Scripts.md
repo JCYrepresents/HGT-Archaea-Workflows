@@ -126,6 +126,40 @@ directory_path = "/path/to/your/tsv/files/"
 - Headers are added as `## Genome_Name ##` before each dataset.
 - Empty files are skipped to prevent errors.
 
+## HGTector-IslandViewer Results Merger
+
+This script refines and merges **HGTector results** with **IslandViewer4 predictions**, ensuring accurate mapping of protein IDs and genome lineage data.
+
+### Features
+- Loads **HGTector results** and **IslandViewer4 Results **.
+- Extracts **genome-lineage mapping** from header rows.
+- Assigns **lineage information** to protein entries.
+- Performs **refined merging** based on exact **Protein_ID** matches.
+- Groups multiple **method annotations** per protein.
+- Ensures **HGTector** is always included in the method column.
+- Saves the final merged dataset as a structured **CSV file**.
+
+### Usage
+Run the script:
+
+```python
+python merge_result_Islector_right.py
+```
+
+### Input Files:
+- `Final_final_table_Results.csv`: HGTector results.
+- `merged_genomes_corrected_final.tsv`: IslandViewer4 merged genome results.
+
+### Output File:
+- `Refined_Merged_Table.csv`: Merged results with lineage, island, and functional data.
+
+## Notes
+- Extracts lineage from **header rows** and applies it to relevant entries.
+- Only keeps **exact matches** between `Protein_ID` and `Locus`.
+- Aggregates multiple **methods** per protein, ensuring **HGTector** is always included.
+
+
+
 
 
 
