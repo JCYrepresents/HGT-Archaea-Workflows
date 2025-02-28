@@ -3,7 +3,7 @@
 Overview of the **HGTector2** and **IslandViewer4** prediction results.
 
 ## HGTector2 Results
-Both the **final processed results** for HGTector2 and IslandViewer4, as well as the **raw results from the HGTector2 analyze step** (686 Genomes), are available in the corresponding folder.The processed prediction results are available in .tsv/.csv format and as Excel files for easier data handling and visualization. If one wants to rerun the full workflow or access the raw homology search results of HGTector2, use the following Google Drive link:
+Both the **final processed results** for HGTector2 and IslandViewer4, as well as the **raw results from the HGTector2 analyze step** (686 genomes), are available in the corresponding folder.The processed prediction results are available in .tsv/.csv format and as Excel files for easier data handling and visualization. If one wants to rerun the full workflow or access the raw homology search results of HGTector2, use the following Google Drive link:
 
 [Google Drive - HGTector2 homology search](https://drive.google.com/drive/folders/1lK4vnQcEtd2CXB5jZRgTd8OBsiibe5au?usp=sharing) 
 This file has approximately 13GB!
