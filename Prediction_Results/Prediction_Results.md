@@ -19,9 +19,9 @@ HGTector2 generates multiple output files to summarize horizontal gene transfer 
   - Protein ID, Silhouette scores (confidence metric), and putative donor taxon (based on LCA analysis)
 
 - **Graphical Outputs**:
-  - **Histograms (<sample>/`<distal/close>.hist.png`)**: Visualize score distributions for taxonomic groups.
-  - **KDE Plots (<sample>/`<distal/close>.kde.png`)**: Show probability distributions with statistical cutoffs.
-  - **Scatter Plot (<sample>/`scatter.png`)**: Highlights horizontally transferred genes by comparing distal and close scores.
+  - **Histograms (`<sample>/<distal/close>.hist.png`)**: Visualize score distributions for taxonomic groups.
+  - **KDE Plots (`<sample>/<distal/close>.kde.png`)**: Show probability distributions with statistical cutoffs.
+  - **Scatter Plot (`<sample>/scatter.png`)**: Highlights horizontally transferred genes by comparing distal and close scores.
 
 These results offer both numerical and graphical insights into putative HGT events, aiding further validation and classification.
 
