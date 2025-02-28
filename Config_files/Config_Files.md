@@ -34,6 +34,8 @@ Ensure all paths and parameters are correctly configured before running HGTector
 ```bash
 hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/database/diamond/db/db.dmnd --threads 7
 ```
+<br>
+<br>
 
 # config_HGTector2_analyze.yaml for the HGTector2 analysis rerun snakemake workflow
 
@@ -52,12 +54,8 @@ Ensure the paths and new parameters are correctly configured before running **HG
 
 For a full reference on parameter settings, visit the [HGTector2 documentation](https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md).
 
-
-
-
-
-
-
+<br>
+<br>
 
 # config_collect.yaml for the HGTector2 main snakemake workflow
 This YAML configuration file defines the paths required for **collecting and merging** final HGTector2 results.
@@ -76,6 +74,9 @@ python collect_results.py --analyze_dir analyze_dir/test_mainflow --output final
 ```
 
 For modifications or optimizations, update the YAML file accordingly and rerun the process.
+
+<br>
+<br>
 
 # config_details.yaml for the HGTector2 main snakemake workflow
 
