@@ -51,7 +51,7 @@ HGTector2 relies on several external software packages. Before installation, ens
 
 ## Dependencies Instructions
 
-1. Install Snakemake (In Base Conda Environment)
+1. Install Snakemake (in Conda base environment)
 
 Snakemake should be installed **in the base Conda environment** to properly manage workflows:
    ```bash
