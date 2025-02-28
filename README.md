@@ -1,6 +1,6 @@
 # ArchaeaHGT:Snakemake Workflows for Detecting Horizontal Gene Transfer in Archaeal Genomes  
 
-## Overview  
+## Abstract  
 Archaea, a distinct domain of life, are an increasingly recognized yet understudied component of the human microbiome. A key driver of their adaptation is horizontal gene transfer (HGT), which facilitates genetic exchange and functional diversification. This project introduces a computational framework designed for the detection of horizontal gene transfer (HGT) in archaeal genomes at a large scale. It integrates phylogenetic and sequence composition-based tools into two workflows, respectively utilizing Snakemake. Applying these workflows to a dataset of human-associated archaeal genomes, I identified 23,574 putative HGT events across 686 genomes. This approach provides scalable and adaptable workflows for analyzing horizontal gene transfer (HGT) in archaea, enabling a systematic investigation of such events and their implications for microbial interactions, including potential pathogenicity. 
 
 This project integrates **HGTector2** for taxonomic HGT classification and **IslandViewer4** for genomic island (GI) prediction, providing a structured and reproducible framework for large-scale HGT analysis.  
@@ -24,6 +24,8 @@ This project integrates **HGTector2** for taxonomic HGT classification and **Isl
 ### 3. Data Processing & Outputs  
 - The workflow is optimized for analyzing **large-scale metagenomic datasets**.  
 - Outputs include **HGT predictions, putative donors, functional annotations, and genomic island reports**, with accompanying visualizations (scatter plots, KDE distributions, and GI maps).  
+
+## Overview documentation
 
 
 ## Installation & Usage  
