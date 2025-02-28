@@ -111,6 +111,50 @@ Run Snakemake with:
 snakemake -s collect_results.smk --use-conda --configfile path/to/config_collect.yaml
 ```
 
+<br>
+
+# HGTector2 Annotation Expansion Workflow
+
+This Snakemake workflow enhances **HGTector2 results** by adding **gene names** and **product descriptions** extracted from `.faa` annotation files.
+
+## Configuration
+
+- Uses **`config_annotate.yaml`** by default.
+- If placed elsewhere, specify the path with:
+  ```bash
+  --configfile path/to/config_annotate.yaml
+  ```
+
+## Key Directories
+
+- **`input_dir`**: Directory containing **FAA annotation files**.
+- **`merged_csv`**: Input **CSV file** before annotation expansion.
+- **`final_csv`**: Output **CSV file** after annotation expansion.
+
+## Workflow Rules
+
+### 1. `all`
+
+Ensures the final annotated CSV file is generated.
+
+### 2. `expand_with_faa`
+
+- Reads **merged HGTector2 results**.
+- Extracts **gene names** and **product descriptions** from `.faa` files included in the fasta header
+- Maps annotations to corresponding **Protein\_IDs**.
+- Saves the final **annotated CSV** in `final_csv`.
+
+## Usage
+
+Run Snakemake with:
+
+```bash
+snakemake -s Add_details.smk --use-conda --configfile path/to/config_annotate.yaml
+```
+
+
+
+
 
 
 
