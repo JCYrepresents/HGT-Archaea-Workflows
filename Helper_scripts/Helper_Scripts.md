@@ -1,6 +1,7 @@
 # Helper Scripts
 
-## For HGTector2 
+## HGTector2 
+
 ### GFF to FAA Converter
 
 This script extracts coding sequences (CDS) from GFF files, translates them into protein sequences, and outputs them as FASTA (.faa) files. It also logs any missing sequence IDs.
