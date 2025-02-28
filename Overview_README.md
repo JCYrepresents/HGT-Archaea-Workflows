@@ -83,6 +83,8 @@ In this project, the **pre-built reference database** from the latest **HGTector
 
 ## Citations
 
+>Chibani, C. M., Mahnert, A., Borrel, G., Almeida, A., Werner, A., Brugère, J.-F., Gribaldo, S., Finn, R. D., Schmitz, R. A., & Moissl-Eichinger, C. (2022). A catalogue of 1,167 genomes from the human gut archaeome. Nature Microbiology, 7(1), 48–61. https://doi.org/10.1038/s41564-021-01020-9
+
 > Zhu, Q., Kosoy, M., & Dittmar, K. (2014). HGTector: an automated method facilitating genome-wide discovery of putative horizontal gene transfers. BMC Genomics, 15(1), 717. https://doi.org/10.1186/1471-2164-15-717
 
 > Bertelli, C., Laird, M. R., Williams, K. P., Simon Fraser University Research Computing Group, Lau, B. Y., Hoad, G., Winsor, G. L., & Brinkman, F. S. L. (2017). IslandViewer 4: expanded prediction of genomic islands for larger-scale datasets. Nucleic Acids Research, 45(W1), W30–W35. https://doi.org/10.1093/nar/gkx343
