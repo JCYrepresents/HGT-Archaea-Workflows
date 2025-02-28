@@ -60,7 +60,7 @@ This YAML configuration file specifies the directories and file paths required f
 
 ## Important Note
 
-- **Ensure that **.faa** files contain gene names and product annotations in the header** for the script to function correctly.
+- **Ensure that .faa** files contain gene names and product annotations in the fasta header for the script to function correctly.
 
 ## Configuration Overview
 
