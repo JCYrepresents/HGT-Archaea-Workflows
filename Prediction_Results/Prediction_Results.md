@@ -1,6 +1,7 @@
 # Prediction Results Overview
 
-Overview of the **HGTector2** and **IslandViewer4** prediction results applied on the human gut archaeome dataset.
+Overview of the **HGTector2** and **IslandViewer4** prediction results applied on the human gut archaeome dataset. 
+<br>
 -HGTector2 (686 genomes)
 -IslandViewer4 (7 genomes)
 
