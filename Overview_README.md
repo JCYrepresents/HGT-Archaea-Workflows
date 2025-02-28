@@ -30,7 +30,7 @@ This project integrates **HGTector2** for taxonomic HGT classification and **Isl
 To install and run HGTector2, ensure your system meets the following requirements:
 
 - **Operating System**: Linux
-- **Storage**: Minimum of 10 GB free disk space + addiotnal space for the reference database
+- **Storage**: Minimum of 10 GB free disk space + additional space for the reference database
 - **Python Version**: Python 3.6 or higher
   
 # HGTector2 Requirements
