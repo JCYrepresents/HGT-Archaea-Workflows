@@ -1,6 +1,6 @@
-# IslandViewer4 Snakemake Workflow
+# IslandViewer Snakemake Workflow
 
-This Snakemake workflow automates **IslandViewer4** analysis by processing GenBank (`.gbk`) files and storing the output in a designated results folder.
+This Snakemake workflow automates **IslandViewer** analysis by processing GenBank (`.gbk`) files and storing the output in a designated results folder.
 
 ## Configuration
 - Uses **`config_islandviewer.yaml`** by default.
@@ -10,6 +10,7 @@ This Snakemake workflow automates **IslandViewer4** analysis by processing GenBa
   ```
 
 ## Key Directories
+- **`islandviewer_script`**: Path to the **IslandViewer2.py script** used for analysis.
 - **`input_folder`**: Directory containing **GenBank (`.gbk`) files**.
 - **`output_folder`**: Directory where **IslandViewer results** will be stored.
 
