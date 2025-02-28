@@ -12,12 +12,12 @@ This Snakemake workflow automates **IslandViewer4** analysis by processing GenBa
 ## Key Directories
 - **`islandviewer_script`**: Path to the **IslandViewer2.py script** used for analysis.
 - **`input_folder`**: Directory containing **GenBank (`.gbk`) files**.
-- **`output_folder`**: Directory where **IslandViewer results** will be stored.
+- **`output_folder`**: Directory where **IslandViewer4 results** will be stored.
 
 ## Workflow Rules
 
 ### 1. `all`
-Ensures all **IslandViewer outputs** are generated.
+Ensures all **IslandViewer4 outputs** are generated.
 
 ### 2. `submit_to_islandviewer`
 - Detects all **.gbk genome files** in `input_folder`.
@@ -30,5 +30,4 @@ Run Snakemake with:
 snakemake -s IslandWorkflow.smk --configfile path/to/config_islandviewer.yaml
 ```
 
-For modifications, update the workflow or configuration file as needed.
 
