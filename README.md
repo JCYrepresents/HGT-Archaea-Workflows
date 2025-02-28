@@ -71,6 +71,7 @@ Snakemake should be installed **in the base Conda environment** to properly mana
    cd ArchaeaHGT  
 
 ## Overview documentation
+[Helper scirpts](Config_files/Config_Files.md)
 
 ## Citations
 
