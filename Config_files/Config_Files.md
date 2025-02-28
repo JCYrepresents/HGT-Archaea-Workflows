@@ -101,6 +101,31 @@ python expand_annotations.py --input_dir output_faa --merged_csv final_results/f
 
 For modifications or optimizations, update the YAML file accordingly and rerun the process.
 
+<br>
+<br>
+
+# For IslandViewer4
+
+## config_details.yaml for the IslandViewer4 snakemake workflow
+
+This YAML configuration file specifies paths required for running the **IslandViewer4 Snakemake workflow** to predict genomic islands.
+
+## Configuration Overview
+
+### Directories
+- **`input_folder`**: Path to the directory containing **GenBank (.gbk) files**.
+- **`output_folder`**: Directory where **IslandViewer results** will be stored.
+
+### Script Path
+- **`islandviewer_script`**: Path to the **IslandViewer2 script** (modify if needed).
+
+## Usage
+Ensure the paths are correctly set before running the **IslandViewer analysis**.
+
+For modifications, update the YAML file accordingly and rerun the process.
+
+
+
 
 
 
