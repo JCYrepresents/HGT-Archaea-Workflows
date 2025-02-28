@@ -27,7 +27,7 @@ def query_uniprot(gene_name, product_name, tax_id):
                     return [entry["primaryAccession"] for entry in data.get("results", [])]
                 elif response.status_code == 429:  # Too many requests
                     wait_time = (attempt + 1) * 2  # Exponential backoff
-                    print(f"🔄 Rate limit hit. Retrying in {wait_time}s...")
+                    print(f" Rate limit hit. Retrying in {wait_time}s...")
                     time.sleep(wait_time)
                 else:
                     break  # If other errors occur, exit retry loop
@@ -67,7 +67,7 @@ def query_uniprot(gene_name, product_name, tax_id):
                         break  # Exit loop if successful
                     elif response.status_code == 429:  # Too many requests
                         wait_time = (attempt + 1) * 2
-                        print(f"🔄 Rate limit hit. Retrying in {wait_time}s...")
+                        print(f" Rate limit hit. Retrying in {wait_time}s...")
                         time.sleep(wait_time)
                     else:
                         break
@@ -91,9 +91,9 @@ def query_uniprot(gene_name, product_name, tax_id):
 
     return "; ".join([f"{v[0]} ({k}) [Confidence: {v[1]}]" for k, v in sorted(go_terms.items(), key=lambda x: evidence_priority(x[1][1]))]) if go_terms else "No GO terms found"
 
-# Load cleaned CSV file
-input_file = "Test2_done.csv"
-output_file = "go_terms_output_final3.csv"
+# Load  CSV file
+input_file = "input.csv" # Adjust file paths/name 
+output_file = "output.csv" #Adjust file paths/name 
 
 df = pd.read_csv(input_file, delimiter=",", encoding="utf-8")
 
