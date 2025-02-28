@@ -3,7 +3,6 @@
 ## for HGTector2:
 
 ### GFF to FAA Converter
-
 This script extracts coding sequences (CDS) from GFF files, translates them into protein sequences, and outputs them as FASTA (.faa) files. It also logs any missing sequence IDs.
 
 ### Features
@@ -27,7 +26,6 @@ This script processes **GFF files** by extracting **CDS sequences**, translating
 
 
 ## Include Lineage
-
 This script integrates **genome lineage information** into **HGTector results** by extracting genome names, mapping them to their lineage, and updating the **HGTector output**
 
 ### Usage
@@ -52,7 +50,6 @@ python hgtector_lineage_mapper.py
 ## for IslandViewer4:
 
 ### GFF to GBK Converter
-
 This script converts **GFF annotations** and associated **FASTA sequences** into a structured **GenBank (.gbk) file** by incorporating gene names, locus tags, and product descriptions.
 
 ### Features
@@ -96,6 +93,42 @@ python GFF_to_GBK.py
 - The script ensures **valid GenBank format** by setting `molecule_type` to **DNA**.
 - Extracted **CDS features** include protein translations when available.
 - Only **valid GFF entries** are processed (skips incomplete or malformed lines).
+
+  
+## IslandViewer4 TSV Merger
+This script merges multiple **TSV result files** from **IslandViewer4** into a single structured file while preserving genome names as headers.
+
+### Features
+- Processes all **TSV files** in a specified directory.
+- Extracts **genome names** from filenames.
+- Inserts **genome name headers** before corresponding data.
+- Skips empty files to ensure data integrity.
+- Saves the final merged dataset as a new **TSV file**.
+
+### Usage
+Run the script to merge TSV files:
+
+```python
+python merge_islandviewer_tsv.py
+```
+
+### Configuration
+Update the `directory_path` variable in the script to the folder containing the **TSV files**:
+```python
+directory_path = "/path/to/your/tsv/files/"
+```
+
+### Output
+- **`merged_genomes_corrected.tsv`**: Final merged file with genome headers included.
+
+4### Notes
+- Only **TSV files** from the specified directory are processed.
+- Headers are added as `## Genome_Name ##` before each dataset.
+- Empty files are skipped to prevent errors.
+
+
+
+
 
 
 
