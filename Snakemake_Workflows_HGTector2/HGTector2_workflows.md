@@ -40,4 +40,44 @@ Run Snakemake with:
 snakemake -s HGTector2_workflow.smk --use-conda --configfile path/to/config_HGTector2.yaml
 ```
 
+<br>
+
+# HGTector2 Analyze-Only Snakemake Workflow
+
+This Snakemake workflow allows users to rerun **only the analysis step** of HGTector2 with different parameter settings, using previously generated search results.
+
+## Workflow Overview
+
+### Configuration
+- Uses **`config_HGTector2_analyze.yaml`** by default if located in the **same directory**.
+- If placed elsewhere, specify the path with:
+  ```bash
+  --configfile path/to/config_HGTector2_analyze.yaml
+  ```
+
+### Key Directories
+- **`search_dir`**: Directory containing **existing HGTector search results**.
+- **`analyze_dir`**: Directory for **storing new analysis results**.
+
+## Workflow Rules
+
+### 1. `all`
+Ensures all final analysis results are generated.
+
+### 2. `hgtector_analyze`
+- Runs **HGTector analysis** on existing search results.
+- Allows modification of **bandwidth, e-value, identity, coverage, and noise settings**.
+- Supports **optional taxonomic filtering** via `self_tax` and `close_tax`.
+- Saves final results in `analyze_dir`.
+
+## Usage
+The `--use-conda` flag is necessary if Snakemake is not installed in the same virtual environment as HGTector.
+
+Run Snakemake with:
+```bash
+snakemake -s HGTector2_workflow_analyze.smk --use-conda --configfile path/to/config_HGTector2_analyze.yaml
+```
+
+
+
 
