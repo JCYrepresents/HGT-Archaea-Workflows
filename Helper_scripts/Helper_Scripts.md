@@ -51,6 +51,59 @@ python hgtector_lineage_mapper.py
 
 ## for IslandViewer4:
 
+### GFF to GBK Converter
+
+This script converts **GFF annotations** and associated **FASTA sequences** into a structured **GenBank (.gbk) file** by incorporating gene names, locus tags, and product descriptions.
+
+### Features
+- Loads **genome sequence** from a FASTA file.
+- Extracts **protein sequences** from a FASTA file.
+- Parses **GFF annotations** and converts them into GenBank features.
+- Integrates **gene names, locus tags, and product descriptions**.
+- Saves the final output as a **GenBank (.gbk) file**.
+
+### Requirements
+This script requires **Python 3** and the following dependencies:
+- `Biopython`
+
+Install dependencies with:
+```bash
+pip install biopython
+```
+
+### Usage
+Run the script as follows:
+
+```python
+python GFF_to_GBK.py
+```
+
+### Input Files:
+- `genome.fasta`: FASTA file containing the genome sequence.
+- `proteins.fasta`: FASTA file containing protein sequences.
+- `genome.gff`: GFF file with genome annotations.
+
+### Output File:
+- `genome_with_annotations.gbk`: GenBank file with integrated annotations.
+
+### Process Overview
+1. **Load Data:** Reads genome and protein sequences.
+2. **Parse GFF:** Extracts annotation data and attributes.
+3. **Create Features:** Adds extracted features (CDS, genes, etc.) to the GenBank record.
+4. **Save Output:** Writes the annotated GenBank file.
+
+### Notes
+- The script ensures **valid GenBank format** by setting `molecule_type` to **DNA**.
+- Extracted **CDS features** include protein translations when available.
+- Only **valid GFF entries** are processed (skips incomplete or malformed lines).
+
+
+
+
+
+
+
+
 
 
 
