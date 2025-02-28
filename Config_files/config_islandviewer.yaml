@@ -1,11 +1,11 @@
 # config_islandviewer.yaml
 
 # Input directory containing .gbk files
-input_folder: "/home/king/Desktop/Island4_1/Genomes"
+input_folder: "/path/to/your//Genomes"
 
 # Output directory for IslandViewer results
-output_folder: "Island4"
+output_folder: "Island4" 
 
 # IslandViewer script path (modify if needed)
-islandviewer_script: "/home/king/Desktop/Island4_1/IslandViewer2.py"
+islandviewer_script: "/path/to/IslandViewer2.py"
 
