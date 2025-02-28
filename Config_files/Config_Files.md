@@ -1,7 +1,7 @@
 # For HGTector2 
 
 
-## config_HGTector2.yaml for the HGTector2 main snakemake workflow
+# config_HGTector2.yaml for the HGTector2 main snakemake workflow
 This YAML configuration file defines the parameters and paths required to run **HGTector2** for detecting horizontal gene transfer (HGT) events.
 
 ## Configuration Overview
@@ -37,7 +37,7 @@ hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/dat
 
 
 
-## config_collect.yaml for the HGTector2 main snakemake workflow
+# config_collect.yaml for the HGTector2 main snakemake workflow
 This YAML configuration file defines the paths required for **collecting and merging** final HGTector2 results.
 
 ### Configuration Overview
@@ -55,7 +55,7 @@ python collect_results.py --analyze_dir analyze_dir/test_mainflow --output final
 
 For modifications or optimizations, update the YAML file accordingly and rerun the process.
 
-## config_details.yaml for the HGTector2 main snakemake workflow
+# config_details.yaml for the HGTector2 main snakemake workflow
 
 This YAML configuration file specifies the directories and file paths required for **adding details** in the dataset.
 
