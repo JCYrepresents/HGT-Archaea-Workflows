@@ -14,7 +14,7 @@ def submit_genome(genome_file):
     )
     
     headers={'Content-Type': multipart_data.content_type,
-             'x-authtoken': 'c7dd915e-c6e3-6867-dc1c-8305a722fd50'}
+             'x-authtoken': 'Write your token here'}
     
     r = requests.post(server+ext, headers=headers, data=multipart_data)
     
