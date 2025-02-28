@@ -47,7 +47,7 @@ HGTector2 relies on several external software packages. Before installation, ens
   - pandas
   - matplotlib
   - scikit-learn
-  - **Biopython** (for the helper scripts)
+  - **Biopython** (also important for the helper scripts)
 
 ## Dependencies Instructions
 
