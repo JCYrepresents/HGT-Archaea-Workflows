@@ -35,6 +35,28 @@ Ensure all paths and parameters are correctly configured before running HGTector
 hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/database/diamond/db/db.dmnd --threads 7
 ```
 
+# config_HGTector2_analyze.yaml for the HGTector2 analysis rerun snakemake workflow
+
+This YAML file extends the **HGTector2 configuration** by specifying additional paths and optional parameters for **analysis refinement**.
+
+## Additional Configuration
+
+### Updated Directories
+- **`analyze_dir`**: Directory for **second-run analysis results**.
+
+### New Optional Parameters
+- **`self_tax` & `close_tax`**: Define specific taxonomic groups for classification (optional).
+
+## Usage
+Ensure the paths and new parameters are correctly configured before running **HGTector2 rerun analysis workflow**.
+
+For a full reference on parameter settings, visit the [HGTector2 documentation](https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md).
+
+
+
+
+
+
 
 
 # config_collect.yaml for the HGTector2 main snakemake workflow
