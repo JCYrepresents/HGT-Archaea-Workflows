@@ -1,5 +1,5 @@
 ## Here is the documentation of the config files used for the different Snakemake workflows for example usage please see: 
-[HGTector2 workflows](Snakemake_Workflows_HGTector2/HGTector2_workflows.md) or [IslandViewer4 workflow](Snakemake_Workflow_Islandviewer4/IslandViewer4_workflow.md)
+[HGTector2 workflows](HGT-Archaea-Workflows/Snakemake_Workflows_HGTector2/HGTector2_workflows.md) or [IslandViewer4 workflow](HGT-Archaea-Workflows/Snakemake_Workflow_Islandviewer4/IslandViewer4_workflow.md)
 
 # For HGTector2 
 
