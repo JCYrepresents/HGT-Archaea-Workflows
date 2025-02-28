@@ -1,38 +1,43 @@
-# ArchaeaHGT:Snakemake Workflows for Detecting Horizontal Gene Transfer in Archaeal Genomes  
+# HGTector2 Snakemake Workflow
 
-## Overview  
-This repository contains a **Snakemake workflow** developed as part of a **Praktikum** under the supervision of **Prof. Dr. Rattei**. The workflow enables **automated detection of horizontal gene transfer (HGT)** in archaeal genomes, particularly from the **human archaeome**, using a combination of **phylogenetic and sequence composition-based approaches**.  
+This Snakemake workflow automates **HGTector2** processing, from homology search to analysis, using configurations defined in a YAML file.
 
-The pipeline integrates **HGTector2** for taxonomic HGT classification and **IslandViewer4** for genomic island (GI) prediction, providing a structured and reproducible framework for large-scale HGT analysis.  
+## Workflow Overview
 
-## Features  
-- **Phylogenetic HGT detection** using HGTector2 with a curated reference database.  
-- **Genomic island prediction** with IslandViewer4 to refine HGT classification.  
-- **Functional annotation retrieval** from UniProtKB, including **GO term assignments** for putative HGT candidates.  
-- **Reproducible and scalable** Snakemake pipeline for large-scale archaeal genome analysis.  
+### Configuration
+- Uses **`config_HGTector2.yaml`** by default if located in the **same directory**.
+- If placed elsewhere, specify the path with:
+  ```bash
+  --configfile path/to/config_HGTector2.yaml
+  ```
 
-## Methodology  
-### 1. HGTector2 Workflow  
-- Analyzes archaeal genomes to detect putative HGT events based on **taxonomic distribution of BLAST hits**.  
-- Uses a structured reference database to classify genes into **self, close, and distal taxonomic groups**.  
-- Outputs **putative donor taxa**, **statistical classification of HGT events**, and **functional annotations** from UniProtKB.  
+### Key Directories
+- **`input_dir`**: Directory with **FAA proteome files**.
+- **`search_dir`**: Directory for **HGTector search results**.
+- **`analyze_dir`**: Directory for **HGTector analysis results**.
 
-### 2. IslandViewer4 Workflow  
-- Predicts **genomic islands (GIs)**, which often contain horizontally acquired genes.  
-- Allows cross-referencing of HGTector2 predictions with genomic island locations for **improved classification accuracy**.  
+## Workflow Rules
 
-### 3. Data Processing & Outputs  
-- The workflow is optimized for analyzing **large-scale metagenomic datasets**.  
-- Outputs include **HGT predictions, putative donors, functional annotations, and genomic island reports**, with accompanying visualizations (scatter plots, KDE distributions, and GI maps).  
+### 1. `all`
+Ensures all final results are generated.
 
-## Applications  
-This workflow enables:  
-- **Comparative genomic studies** of archaeal species.  
-- Investigation of **HGT’s role in archaeal adaptation** to the human microbiome.  
-- Identification of **potentially transferred functional genes**, including those relevant to **pathogenic potential**.  
+### 2. `hgtector_search`
+- Runs **HGTector search** on FAA files.
+- Uses **DIAMOND database** for homology search.
+- Stores search results in `search_dir`.
 
-## Installation & Usage  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/ArchaeaHGT.git  
-   cd ArchaeaHGT  
+### 3. `hgtector_analyze`
+- Runs **HGTector analysis** on search results.
+- Applies **taxonomy filtering** and **parameter adjustments**.
+- Saves final results in `analyze_dir`.
+
+## Usage
+The `--use-conda` flag is necessary if Snakemake is not installed in the same virtual environment as HGTector.
+
+Run Snakemake with:
+Run Snakemake with:
+```bash
+snakemake -s HGTector2_workflow.smk --use-conda --configfile path/to/config_HGTector2.yaml
+```
+
+
