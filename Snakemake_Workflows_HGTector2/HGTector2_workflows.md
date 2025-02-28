@@ -31,7 +31,7 @@ Ensures all final results are generated.
 - Applies **taxonomy filtering** and **parameter adjustments**.
 - Saves final results in `analyze_dir`.
 
-## Usage
+## Example Usage
 The `--use-conda` flag is necessary if Snakemake is not installed in the same virtual environment as HGTector.
 
 Run Snakemake with:
@@ -70,7 +70,7 @@ Ensures all final analysis results are generated.
 - Supports **optional taxonomic filtering** via `self_tax` and `close_tax`.
 - Saves final results in `analyze_dir`.
 
-## Usage
+## Example Usage
 The `--use-conda` flag is necessary if Snakemake is not installed in the same virtual environment as HGTector.
 
 Run Snakemake with:
