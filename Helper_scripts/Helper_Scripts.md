@@ -31,7 +31,7 @@ This script integrates **genome lineage information** into **HGTector results** 
 Run the script:
 
 ```python
-python hgtector_lineage_mapper.py
+python Include_lineage.py
 ```
 
 ### Input Files:
