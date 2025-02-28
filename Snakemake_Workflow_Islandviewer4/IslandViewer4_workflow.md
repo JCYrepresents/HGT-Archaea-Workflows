@@ -1,6 +1,6 @@
 # IslandViewer Snakemake Workflow
 
-This Snakemake workflow automates **IslandViewer** analysis by processing GenBank (`.gbk`) files and storing the output in a designated results folder.
+This Snakemake workflow automates **IslandViewer4** analysis by processing GenBank (`.gbk`) files and storing the output in a designated results folder.
 
 ## Configuration
 - Uses **`config_islandviewer.yaml`** by default.
