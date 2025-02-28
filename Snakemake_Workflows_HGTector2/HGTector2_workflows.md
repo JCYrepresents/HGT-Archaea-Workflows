@@ -118,7 +118,7 @@ snakemake -s collect_results.smk --use-conda --configfile path/to/config_collect
 
 <br>
 
-# HGTector2 Annotation Expansion Workflow
+# HGTector2 Adding Details Workflow
 
 This Snakemake workflow enhances **HGTector2 results** by adding **gene names** and **product descriptions** extracted from `.faa` annotation files.
 
