@@ -32,7 +32,7 @@ To install and run HGTector2, ensure your system meets the following requirement
 - **Operating System**: Linux
 - **Storage**: Minimum of 10 GB free disk space + addiotnal space for the reference database
 - **Python Version**: Python 3.6 or higher
-## Overview documentation
+  
 # HGTector2 Requirements
 
 ## Software Dependencies
@@ -58,7 +58,7 @@ Snakemake should be installed **in the base Conda environment** to properly mana
    conda install -n base -c conda-forge snakemake
    ```
 
-2. **Set Up Conda Environment**:
+2. Set Up Conda Environment:
 
    ```bash
    conda create -n hgtector -c conda-forge python=3.6 pyyaml pandas matplotlib scikit-learn biopython bioconda::diamond
@@ -69,3 +69,10 @@ Snakemake should be installed **in the base Conda environment** to properly mana
    ```bash
    git clone https://github.com/yourusername/ArchaeaHGT.git  
    cd ArchaeaHGT  
+
+## Overview documentation
+
+## Citation
+
+> Zhu, Q., Kosoy, M., & Dittmar, K. (2014). HGTector: an automated method facilitating genome-wide discovery of putative horizontal gene transfers. BMC Genomics, 15(1), 717. https://doi.org/10.1186/1471-2164-15-717
+> Bertelli, C., Laird, M. R., Williams, K. P., Simon Fraser University Research Computing Group, Lau, B. Y., Hoad, G., Winsor, G. L., & Brinkman, F. S. L. (2017). IslandViewer 4: expanded prediction of genomic islands for larger-scale datasets. Nucleic Acids Research, 45(W1), W30–W35. https://doi.org/10.1093/nar/gkx343
