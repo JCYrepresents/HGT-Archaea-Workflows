@@ -1,4 +1,7 @@
+Here is the documentation of the config files used for the different Snakemake workflows for example usage please see: [HGTector2 workflows](Snakemake_Workflows_HGTector2/HGTector2_workflows.md) or [IslandViewer4 workflow](Snakemake_Workflow_IslandViewer4/IslandViewer_workflow.md)
+
 # For HGTector2 
+
 
 ## config_HGTector2.yaml for the HGTector2 main snakemake workflow
 This YAML configuration file defines the parameters and paths required to run **HGTector2** for detecting horizontal gene transfer (HGT) events.
@@ -33,6 +36,27 @@ Ensure all paths and parameters are correctly configured before running HGTector
 ```bash
 hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/database/diamond/db/db.dmnd --threads 7
 ```
+
+
+## config_HGTector2.yaml for the HGTector2 main snakemake workflow
+This YAML configuration file defines the paths required for **collecting and merging** final HGTector2 results.
+
+## Configuration Overview
+
+### Directories
+- **`analyze_dir`**: Path to the directory containing **analyzed results**.
+- **`final_results`**: Directory where the **final merged results** will be stored.
+
+## Usage
+Ensure the paths are correctly set before running the collection script:
+
+```bash
+python collect_results.py --analyze_dir analyze_dir/test_mainflow --output final_results/final_test
+```
+
+For modifications or optimizations, update the YAML file accordingly and rerun the process.
+
+
 
 
 
