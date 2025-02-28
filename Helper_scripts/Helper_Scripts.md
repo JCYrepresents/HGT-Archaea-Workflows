@@ -121,7 +121,7 @@ directory_path = "/path/to/your/tsv/files/"
 ### Output
 - **`merged_genomes_corrected.tsv`**: Final merged file with genome headers included.
 
-4### Notes
+### Notes
 - Only **TSV files** from the specified directory are processed.
 - Headers are added as `## Genome_Name ##` before each dataset.
 - Empty files are skipped to prevent errors.
