@@ -152,7 +152,7 @@ python merge_result_Islector_right.py
 - `merged_genomes_corrected_final.tsv`: IslandViewer4 merged genome results.
 
 ### Output File:
-- `Refined_Merged_Table.csv`: Merged results with lineage, island, and functional data.
+- `Refined_Merged_Table.csv`: Merged results with Gene names, products, island locations, functional data, etc.
 
 ## Notes
 - Extracts lineage from **header rows** and applies it to relevant entries.
