@@ -3,10 +3,10 @@
 Overview of the **HGTector2** and **IslandViewer4** prediction results.
 
 ## HGTector2 Results
-HGTector2 generates multiple output files to summarize horizontal gene transfer (HGT) predictions. Both the **final processed results** and the **raw results from the analyze step** are available in corrsponding folder. If one wants to rerun the full workflow or access the raw homology search results, use the following Google Drive link:
+Both the **final processed results** for HGTector2 and IslandViewer4, as well as the **raw results from the HGTector2 analyze step** (686 Genomes), are available in the corresponding folder. If one wants to rerun the full workflow or access the raw homology search results of HGTector2, use the following Google Drive link:
 
 [Google Drive - HGTector2 homology search](https://drive.google.com/drive/folders/1lK4vnQcEtd2CXB5jZRgTd8OBsiibe5au?usp=sharing) 
-This file has approx. 13GB!
+This file has approximately 13GB!
 
 HGTector2 generates multiple output files to summarize horizontal gene transfer (HGT) predictions:
 
