@@ -35,15 +35,15 @@ python GO_retrieval.py
 - Filters and ranks GO terms based on **evidence confidence**.
 - Adds a **1-second delay per request** to avoid rate limits.
 
-# GO Term Mapper for HGTector Data
+# GO-term Mapper for HGTector Data
 
-This script maps **GO functional terms** to **HGTector results** by matching gene names, product descriptions, and lineage data.
+This script maps **GO-terms (MF)** to **HGTector2 results** by matching gene names, product descriptions, and lineage data.
 
 ## Features
-- Loads **HGTector cleaned results** and **GO term dataset**.
+- Loads **HGTector2 cleaned results** and **GO-term dataset**.
 - Normalizes **Gene_Name** and **Product** formatting.
 - Extracts and propagates **lineage information** from genome headers.
-- Maps **GO terms** based on **Gene_Name, Product, and Lineage**.
+- Maps **GO-terms** based on **Gene_Name, Product, and Lineage**.
 - Preserves existing GO terms if no match is found.
 - Saves the updated dataset as a structured **CSV file**.
 
@@ -64,16 +64,16 @@ python map_GO_to_data.py
 ```
 
 ### Input Files:
-- `HGTector_Results.csv`: HGTector results.
+- `HGTector_Results.csv`: HGTector2 results.
 - `GO_retrieval_output.csv`: Retrieved dataset containing GO terms.
 
 ### Output File:
-- `HGTector_Results_with_GO_Terms.csv`: Updated HGTector results with GO annotations.
+- `HGTector_Results_with_GO_Terms.csv`: Updated HGTector2 results with GO annotations.
 
 ## Notes
 - Extracts **family-level lineage** (`f__FamilyName`) for improved mapping accuracy.
 - Uses **forward fill** to propagate lineage information from genome headers.
-- Ensures **existing GO terms** are preserved if no new match is found.
+- Ensures **existing GO-terms** are preserved if no new match is found.
 
 
 
