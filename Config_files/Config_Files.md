@@ -36,16 +36,17 @@ hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/dat
 ```
 
 
+
 ## config_collect.yaml for the HGTector2 main snakemake workflow
 This YAML configuration file defines the paths required for **collecting and merging** final HGTector2 results.
 
-## Configuration Overview
+### Configuration Overview
 
 ### Directories
 - **`analyze_dir`**: Path to the directory containing **analyzed results**.
 - **`final_results`**: Directory where the **final merged results** will be stored.
 
-## Usage
+### Usage
 Ensure the paths are correctly set before running the collection script:
 
 ```bash
@@ -54,15 +55,15 @@ python collect_results.py --analyze_dir analyze_dir/test_mainflow --output final
 
 For modifications or optimizations, update the YAML file accordingly and rerun the process.
 
-# Configuration Guide for Annotation Expansion
+## config_details.yaml for the HGTector2 main snakemake workflow
 
 This YAML configuration file specifies the directories and file paths required for **adding details** in the dataset.
 
-## Important Note
+### Important Note
 
 - **Ensure that .faa** files contain gene names and product annotations in the fasta header for the script to function correctly.
 
-## Configuration Overview
+### Configuration Overview
 
 ### Directories & Files
 
@@ -70,7 +71,7 @@ This YAML configuration file specifies the directories and file paths required f
 - **`merged_csv`**: Input CSV file before annotation expansion.
 - **`final_csv`**: Output CSV file after annotation expansion.
 
-## Usage
+### Usage
 
 Ensure the paths are correctly set before running the annotation expansion script:
 
