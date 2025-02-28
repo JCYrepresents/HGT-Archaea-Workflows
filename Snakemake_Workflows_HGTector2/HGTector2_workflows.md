@@ -40,7 +40,6 @@ Ensures all final results are generated.
 The `--use-conda` flag is necessary if Snakemake is not installed in the same virtual environment as HGTector.
 
 Run Snakemake with:
-Run Snakemake with:
 ```bash
 snakemake -s HGTector2_workflow.smk --use-conda --configfile path/to/config_HGTector2.yaml
 ```
