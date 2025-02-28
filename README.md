@@ -72,7 +72,8 @@ Snakemake should be installed **in the base Conda environment** to properly mana
 
 ## Overview documentation
 
-## Citation
+## Citations
 
 > Zhu, Q., Kosoy, M., & Dittmar, K. (2014). HGTector: an automated method facilitating genome-wide discovery of putative horizontal gene transfers. BMC Genomics, 15(1), 717. https://doi.org/10.1186/1471-2164-15-717
+
 > Bertelli, C., Laird, M. R., Williams, K. P., Simon Fraser University Research Computing Group, Lau, B. Y., Hoad, G., Winsor, G. L., & Brinkman, F. S. L. (2017). IslandViewer 4: expanded prediction of genomic islands for larger-scale datasets. Nucleic Acids Research, 45(W1), W30–W35. https://doi.org/10.1093/nar/gkx343
