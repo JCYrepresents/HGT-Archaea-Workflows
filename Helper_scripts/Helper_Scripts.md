@@ -108,7 +108,7 @@ This script merges multiple **TSV result files** from **IslandViewer4** into a s
 Run the script to merge TSV files:
 
 ```python
-python merge_islandviewer_tsv.py
+python Collect_Results_Island.py
 ```
 
 ### Configuration
@@ -132,12 +132,12 @@ directory_path = "/path/to/your/tsv/files/"
 This script refines and merges **HGTector results** with **IslandViewer4 predictions**, ensuring accurate mapping of protein IDs and genome lineage data.
 
 ### Features
-- Loads **HGTector results** and **IslandViewer4 Results **.
+- Loads **HGTector2 results** and **IslandViewer4 Results **.
 - Extracts **genome-lineage mapping** from header rows.
 - Assigns **lineage information** to protein entries.
 - Performs **refined merging** based on exact **Protein_ID** matches.
 - Groups multiple **method annotations** per protein.
-- Ensures **HGTector** is always included in the method column.
+- Ensures **HGTector2** is always included in the method column.
 - Saves the final merged dataset as a structured **CSV file**.
 
 ### Usage
@@ -148,7 +148,7 @@ python merge_result_Islector_right.py
 ```
 
 ### Input Files:
-- `Final_final_table_Results.csv`: HGTector results.
+- `Final_final_table_Results.csv`: HGTector2 results.
 - `merged_genomes_corrected_final.tsv`: IslandViewer4 merged genome results.
 
 ### Output File:
