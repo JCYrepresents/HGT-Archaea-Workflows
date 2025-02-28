@@ -27,10 +27,11 @@ This YAML configuration file defines the parameters and paths required to run **
 - **`noise`**: Noise reduction parameter (**default: 0**).
 
 ## Usage
-Ensure all paths and parameters are correctly configured before running HGTector2 for. For a detailed description of analysis parameters see [HGTector2 repo] (https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md)
+Ensure all paths and parameters are correctly configured before running HGTector2 for. For a detailed description of analysis parameters see HGTector2 repo: https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md
 
 ```bash
 hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/database/diamond/db/db.dmnd --threads 7
 ```
+
 
 
