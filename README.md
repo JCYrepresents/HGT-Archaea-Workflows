@@ -75,7 +75,7 @@ In this project, the **pre-built reference database** from the latest **HGTector
 - [Prediction Result](Prediction_Results/Prediction_Results.md)
 
 
-## Installation & Usage  
+## Installation   
 1. Clone the repository:  
    ```bash
    git clone https://github.com/yourusername/ArchaeaHGT.git  
