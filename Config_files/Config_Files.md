@@ -1,38 +1,36 @@
-# ArchaeaHGT:Snakemake Workflows for Detecting Horizontal Gene Transfer in Archaeal Genomes  
+# For HGTector2 
 
-## Overview  
-This repository contains a **Snakemake workflow** developed as part of a **Praktikum** under the supervision of **Prof. Dr. Rattei**. The workflow enables **automated detection of horizontal gene transfer (HGT)** in archaeal genomes, particularly from the **human archaeome**, using a combination of **phylogenetic and sequence composition-based approaches**.  
+This YAML configuration file defines the parameters and paths required to run **HGTector2** for detecting horizontal gene transfer (HGT) events.
 
-The pipeline integrates **HGTector2** for taxonomic HGT classification and **IslandViewer4** for genomic island (GI) prediction, providing a structured and reproducible framework for large-scale HGT analysis.  
+## Configuration Overview
 
-## Features  
-- **Phylogenetic HGT detection** using HGTector2 with a curated reference database.  
-- **Genomic island prediction** with IslandViewer4 to refine HGT classification.  
-- **Functional annotation retrieval** from UniProtKB, including **GO term assignments** for putative HGT candidates.  
-- **Reproducible and scalable** Snakemake pipeline for large-scale archaeal genome analysis.  
+### Input & Output Directories
+- **`input_dir`**: Directory containing input **proteome FASTA files**.
+- **`search_dir`**: Directory for storing **intermediate search results**.
+- **`analyze_dir`**: Directory for **final processed results**.
 
-## Methodology  
-### 1. HGTector2 Workflow  
-- Analyzes archaeal genomes to detect putative HGT events based on **taxonomic distribution of BLAST hits**.  
-- Uses a structured reference database to classify genes into **self, close, and distal taxonomic groups**.  
-- Outputs **putative donor taxa**, **statistical classification of HGT events**, and **functional annotations** from UniProtKB.  
+### Database Settings
+- **`diamond_db`**: Path to the **DIAMOND-formatted database** for homology searches.
+- **`taxdump`**: Path to the **taxonomy database dump** required for taxonomic classification.
 
-### 2. IslandViewer4 Workflow  
-- Predicts **genomic islands (GIs)**, which often contain horizontally acquired genes.  
-- Allows cross-referencing of HGTector2 predictions with genomic island locations for **improved classification accuracy**.  
+### HGTector2 Settings
+- **`threads`**: Number of CPU threads to use (**adjust based on available resources**).
+- **`conda_env`**: Path to the **Conda environment** for running HGTector2.
 
-### 3. Data Processing & Outputs  
-- The workflow is optimized for analyzing **large-scale metagenomic datasets**.  
-- Outputs include **HGT predictions, putative donors, functional annotations, and genomic island reports**, with accompanying visualizations (scatter plots, KDE distributions, and GI maps).  
+### Analysis Parameters
+- **`bandwidth`**: Set to **grid** for optimized estimation.
+- **`donor_name`**: Whether to display donor taxonomy name or ID (**true** or **false**).
+- **`evalue`**: E-value cutoff for homology searches (**default: 1e-50**).
+- **`identity`**: Minimum percentage identity for valid hits (**default: 50**).
+- **`coverage`**: Minimum query coverage required (**default: 50**).
+- **`silhouette`**: Threshold for silhouette score filtering (**default: 0**).
+- **`noise`**: Noise reduction parameter (**default: 0**).
 
-## Applications  
-This workflow enables:  
-- **Comparative genomic studies** of archaeal species.  
-- Investigation of **HGT’s role in archaeal adaptation** to the human microbiome.  
-- Identification of **potentially transferred functional genes**, including those relevant to **pathogenic potential**.  
+## Usage
+Ensure all paths and parameters are correctly configured before running HGTector2 for. For a detailed description of analysis parameters see [HGTector2 repo] (https://github.com/qiyunlab/HGTector/blob/master/doc/analyze.md)
 
-## Installation & Usage  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/ArchaeaHGT.git  
-   cd ArchaeaHGT  
+```bash
+hgtector search -i output_faa_2 -o /root/search_dir/test_mainflow --db /root/database/diamond/db/db.dmnd --threads 7
+```
+
+
