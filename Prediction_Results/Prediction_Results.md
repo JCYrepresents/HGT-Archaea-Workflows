@@ -1,38 +1,35 @@
-# ArchaeaHGT:Snakemake Workflows for Detecting Horizontal Gene Transfer in Archaeal Genomes  
+# Prediction Results Overview
 
-## Overview  
-This repository contains a **Snakemake workflow** developed as part of a **Praktikum** under the supervision of **Prof. Dr. Rattei**. The workflow enables **automated detection of horizontal gene transfer (HGT)** in archaeal genomes, particularly from the **human archaeome**, using a combination of **phylogenetic and sequence composition-based approaches**.  
+Overview of the **HGTector2** and **IslandViewer4** prediction results.
 
-The pipeline integrates **HGTector2** for taxonomic HGT classification and **IslandViewer4** for genomic island (GI) prediction, providing a structured and reproducible framework for large-scale HGT analysis.  
+## HGTector2 Results
+HGTector2 generates multiple output files to summarize horizontal gene transfer (HGT) predictions. Both the **final processed results** and the **raw results from the analyze step** are available in corrsponding folder. If one wants to rerun the full workflow or access the raw homology search results, use the following Google Drive link:
 
-## Features  
-- **Phylogenetic HGT detection** using HGTector2 with a curated reference database.  
-- **Genomic island prediction** with IslandViewer4 to refine HGT classification.  
-- **Functional annotation retrieval** from UniProtKB, including **GO term assignments** for putative HGT candidates.  
-- **Reproducible and scalable** Snakemake pipeline for large-scale archaeal genome analysis.  
+[Google Drive - HGTector2 homology search]([your_google_drive_link_here](https://drive.google.com/drive/folders/1lK4vnQcEtd2CXB5jZRgTd8OBsiibe5au?usp=sharing)) This file has approx. 13GB!
 
-## Methodology  
-### 1. HGTector2 Workflow  
-- Analyzes archaeal genomes to detect putative HGT events based on **taxonomic distribution of BLAST hits**.  
-- Uses a structured reference database to classify genes into **self, close, and distal taxonomic groups**.  
-- Outputs **putative donor taxa**, **statistical classification of HGT events**, and **functional annotations** from UniProtKB.  
+HGTector2 generates multiple output files to summarize horizontal gene transfer (HGT) predictions:
 
-### 2. IslandViewer4 Workflow  
-- Predicts **genomic islands (GIs)**, which often contain horizontally acquired genes.  
-- Allows cross-referencing of HGTector2 predictions with genomic island locations for **improved classification accuracy**.  
+- **scores.tsv**: Tab-delimited file containing per-protein details:
+  - Sample name, Protein ID, Sequence length
+  - Total filtered hits and cumulative bit scores for taxonomic groups (self, close, distal)
+  - Best-scoring match in the distal group, indicating a potential donor taxon
 
-### 3. Data Processing & Outputs  
-- The workflow is optimized for analyzing **large-scale metagenomic datasets**.  
-- Outputs include **HGT predictions, putative donors, functional annotations, and genomic island reports**, with accompanying visualizations (scatter plots, KDE distributions, and GI maps).  
+- **hgts/<sample>.txt**: Lists all predicted horizontally transferred proteins:
+  - Protein ID, Silhouette scores (confidence metric), and putative donor taxon (based on LCA analysis)
 
-## Applications  
-This workflow enables:  
-- **Comparative genomic studies** of archaeal species.  
-- Investigation of **HGT’s role in archaeal adaptation** to the human microbiome.  
-- Identification of **potentially transferred functional genes**, including those relevant to **pathogenic potential**.  
+- **Graphical Outputs**:
+  - **Histograms (`<distal/close>.hist.png`)**: Visualize score distributions for taxonomic groups.
+  - **KDE Plots (`<distal/close>.kde.png`)**: Show probability distributions with statistical cutoffs.
+  - **Scatter Plot (`scatter.png`)**: Highlights horizontally transferred genes by comparing distal and close scores.
 
-## Installation & Usage  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/ArchaeaHGT.git  
-   cd ArchaeaHGT  
+These results offer both numerical and graphical insights into putative HGT events, aiding further validation and classification.
+
+## IslandViewer4 Results
+IslandViewer4 generates a downloadable results table that provides genomic island predictions. The table includes:
+- **Island coordinates**: Start and end positions of predicted genomic islands.
+- **Detection methods**: The tools used to identify genomic islands.
+- **Gene details**: Locus, position, strand, and product information.
+- **External annotations**: Additional reference data for further analysis.
+
+For any further analysis or interpretation, refer to the respective documentation of **HGTector2** and **IslandViewer4**.
+
