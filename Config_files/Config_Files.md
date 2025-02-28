@@ -75,7 +75,7 @@ This YAML configuration file specifies the directories and file paths required f
 
 ### Important Note
 
-- **Ensure that .faa** files contain gene names and product annotations in the fasta header before running the **Adding details Snakemake script** to function correctly.
+- **Ensure that .faa** files contain gene names and product annotations in the fasta header before running **Add_details.smk** to function correctly.
 
 ### Configuration Overview
 
@@ -87,11 +87,8 @@ This YAML configuration file specifies the directories and file paths required f
 
 ### Usage
 
-Ensure the paths are correctly set before running the annotation expansion script:
+Ensure the paths are correctly set before running the add details Snakemake script:
 
-```bash
-python expand_annotations.py --input_dir output_faa --merged_csv final_results/final_test/merged_results.csv --output final_results/final_test/final_output.csv
-```
 
 For modifications or optimizations, update the YAML file accordingly and rerun the process.
 
