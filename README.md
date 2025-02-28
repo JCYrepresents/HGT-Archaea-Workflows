@@ -25,11 +25,6 @@ This project integrates **HGTector2** for taxonomic HGT classification and **Isl
 - The workflow is optimized for analyzing **large-scale metagenomic datasets**.  
 - Outputs include **HGT predictions, putative donors, functional annotations, and genomic island reports**, with accompanying visualizations (scatter plots, KDE distributions, and GI maps).  
 
-## Applications  
-This workflow enables:  
-- **Comparative genomic studies** of archaeal species.  
-- Investigation of **HGT’s role in archaeal adaptation** to the human microbiome.  
-- Identification of **potentially transferred functional genes**, including those relevant to **pathogenic potential**.  
 
 ## Installation & Usage  
 1. Clone the repository:  
