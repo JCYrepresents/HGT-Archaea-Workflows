@@ -77,6 +77,42 @@ Run Snakemake with:
 ```bash
 snakemake -s HGTector2_workflow_analyze.smk --use-conda --configfile path/to/config_HGTector2_analyze.yaml
 ```
+<br>
+
+# HGTector2 Results Collection Workflow
+
+This Snakemake workflow automates the **collection and merging** of analyzed HGTector2 results into a single CSV file.
+
+## Configuration
+- Uses **`config_collect.yaml`** by default.
+- If placed elsewhere, specify the path with:
+  ```bash
+  --configfile path/to/config_collect.yaml
+  ```
+
+## Key Directories
+- **`analyze_dir`**: Directory containing **HGTector analysis results**.
+- **`final_results`**: Directory where the **merged results CSV** will be stored.
+
+## Workflow Rules
+
+### 1. `all`
+Ensures the final merged CSV file is generated.
+
+### 2. `merge_txt_to_csv`
+- Detects all **genome-specific result files** dynamically.
+- Extracts **Protein_ID, Score, and Taxonomy_ID** from `.txt` files.
+- Adds genome-specific headers for clarity.
+- Merges all results into **`merged_results.csv`** in `final_results`.
+
+## Usage
+Run Snakemake with:
+```bash
+snakemake -s collect_results.smk --use-conda --configfile path/to/config_collect.yaml
+```
+
+
+
 
 
 
