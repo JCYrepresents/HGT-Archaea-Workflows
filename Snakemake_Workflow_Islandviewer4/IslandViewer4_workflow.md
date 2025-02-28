@@ -1,38 +1,33 @@
-# ArchaeaHGT:Snakemake Workflows for Detecting Horizontal Gene Transfer in Archaeal Genomes  
+# IslandViewer4 Snakemake Workflow
 
-## Overview  
-This repository contains a **Snakemake workflow** developed as part of a **Praktikum** under the supervision of **Prof. Dr. Rattei**. The workflow enables **automated detection of horizontal gene transfer (HGT)** in archaeal genomes, particularly from the **human archaeome**, using a combination of **phylogenetic and sequence composition-based approaches**.  
+This Snakemake workflow automates **IslandViewer4** analysis by processing GenBank (`.gbk`) files and storing the output in a designated results folder.
 
-The pipeline integrates **HGTector2** for taxonomic HGT classification and **IslandViewer4** for genomic island (GI) prediction, providing a structured and reproducible framework for large-scale HGT analysis.  
+## Configuration
+- Uses **`config_islandviewer.yaml`** by default.
+- If placed elsewhere, specify the path with:
+  ```bash
+  --configfile path/to/config_islandviewer.yaml
+  ```
 
-## Features  
-- **Phylogenetic HGT detection** using HGTector2 with a curated reference database.  
-- **Genomic island prediction** with IslandViewer4 to refine HGT classification.  
-- **Functional annotation retrieval** from UniProtKB, including **GO term assignments** for putative HGT candidates.  
-- **Reproducible and scalable** Snakemake pipeline for large-scale archaeal genome analysis.  
+## Key Directories
+- **`input_folder`**: Directory containing **GenBank (`.gbk`) files**.
+- **`output_folder`**: Directory where **IslandViewer results** will be stored.
 
-## Methodology  
-### 1. HGTector2 Workflow  
-- Analyzes archaeal genomes to detect putative HGT events based on **taxonomic distribution of BLAST hits**.  
-- Uses a structured reference database to classify genes into **self, close, and distal taxonomic groups**.  
-- Outputs **putative donor taxa**, **statistical classification of HGT events**, and **functional annotations** from UniProtKB.  
+## Workflow Rules
 
-### 2. IslandViewer4 Workflow  
-- Predicts **genomic islands (GIs)**, which often contain horizontally acquired genes.  
-- Allows cross-referencing of HGTector2 predictions with genomic island locations for **improved classification accuracy**.  
+### 1. `all`
+Ensures all **IslandViewer outputs** are generated.
 
-### 3. Data Processing & Outputs  
-- The workflow is optimized for analyzing **large-scale metagenomic datasets**.  
-- Outputs include **HGT predictions, putative donors, functional annotations, and genomic island reports**, with accompanying visualizations (scatter plots, KDE distributions, and GI maps).  
+### 2. `submit_to_islandviewer`
+- Detects all **.gbk genome files** in `input_folder`.
+- Runs **IslandViewer4 analysis** on each genome.
+- Saves results in `output_folder`.
 
-## Applications  
-This workflow enables:  
-- **Comparative genomic studies** of archaeal species.  
-- Investigation of **HGT’s role in archaeal adaptation** to the human microbiome.  
-- Identification of **potentially transferred functional genes**, including those relevant to **pathogenic potential**.  
+## Usage
+Run Snakemake with:
+```bash
+snakemake -s IslandWorkflow.smk --configfile path/to/config_islandviewer.yaml
+```
 
-## Installation & Usage  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/ArchaeaHGT.git  
-   cd ArchaeaHGT  
+For modifications, update the workflow or configuration file as needed.
+
