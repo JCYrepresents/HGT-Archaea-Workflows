@@ -70,6 +70,7 @@ In this project, the **pre-built reference database** from the latest **HGTector
 - [Helper scirpts](Helper_scripts/Helper_Scripts.md)
 - [Config files](Config_files/Config_Files.md)
 - [HGTector2 workflows](Snakemake_Workflows_HGTector2/HGTector2_workflows.md)
+- [GO-terms](Helper_scripts/GO/GO_annotation.md)
 - [IslandViewer4 workflow](Snakemake_Workflow_IslandViewer4/IslandViewer_workflow.md)
 - [Prediction Result](Prediction_Results/Prediction_Results.md)
 
