@@ -85,3 +85,5 @@ In this project, the **pre-built reference database** from the latest **HGTector
 > Zhu, Q., Kosoy, M., & Dittmar, K. (2014). HGTector: an automated method facilitating genome-wide discovery of putative horizontal gene transfers. BMC Genomics, 15(1), 717. https://doi.org/10.1186/1471-2164-15-717
 
 > Bertelli, C., Laird, M. R., Williams, K. P., Simon Fraser University Research Computing Group, Lau, B. Y., Hoad, G., Winsor, G. L., & Brinkman, F. S. L. (2017). IslandViewer 4: expanded prediction of genomic islands for larger-scale datasets. Nucleic Acids Research, 45(W1), W30–W35. https://doi.org/10.1093/nar/gkx343
+
+> Consortium, T. U. (2025). UniProt: the Universal Protein Knowledgebase in 2025. Nucleic Acids Research, 53(D1), D609–D617. https://doi.org/10.1093/nar/gkae1010
