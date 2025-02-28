@@ -18,8 +18,8 @@ This Snakemake workflow automates **HGTector2** processing, from homology search
 
 ### Key Directories
 - **`input_dir`**: Directory with **FAA proteome files**.
-- **`search_dir`**: Directory for **HGTector search results**.
-- **`analyze_dir`**: Directory for **HGTector analysis results**.
+- **`search_dir`**: Directory for **HGTector2 search results**.
+- **`analyze_dir`**: Directory for **HGTector2 analysis results**.
 
 ## Workflow Rules
 
@@ -27,17 +27,17 @@ This Snakemake workflow automates **HGTector2** processing, from homology search
 Ensures all final results are generated.
 
 ### 2. `hgtector_search`
-- Runs **HGTector search** on FAA files.
+- Runs **HGTector2 homology search** on FAA files.
 - Uses **DIAMOND database** for homology search.
 - Stores search results in `search_dir`.
 
 ### 3. `hgtector_analyze`
-- Runs **HGTector analysis** on search results.
+- Runs **HGTector2 analysis** on search results.
 - Applies **taxonomy filtering** and **parameter adjustments**.
 - Saves final results in `analyze_dir`.
 
 ## Example Usage
-The `--use-conda` flag is necessary if Snakemake is not installed in the same virtual environment as HGTector.
+The `--use-conda` flag is necessary if Snakemake is not installed in the same virtual environment as HGTector2.
 
 Run Snakemake with:
 ```bash
@@ -60,7 +60,7 @@ This Snakemake workflow allows users to rerun **only the analysis step** of HGTe
   ```
 
 ### Key Directories
-- **`search_dir`**: Directory containing **existing HGTector search results**.
+- **`search_dir`**: Directory containing **existing HGTector2 search results**.
 - **`analyze_dir`**: Directory for **storing new analysis results**.
 
 ## Workflow Rules
@@ -69,7 +69,7 @@ This Snakemake workflow allows users to rerun **only the analysis step** of HGTe
 Ensures all final analysis results are generated.
 
 ### 2. `hgtector_analyze`
-- Runs **HGTector analysis** on existing search results.
+- Runs **HGTector2 analysis** on existing search results.
 - Allows modification of **bandwidth, e-value, identity, coverage, and noise settings**.
 - Supports **optional taxonomic filtering** via `self_tax` and `close_tax`.
 - Saves final results in `analyze_dir`.
@@ -95,7 +95,7 @@ This Snakemake workflow automates the **collection and merging** of analyzed HGT
   ```
 
 ## Key Directories
-- **`analyze_dir`**: Directory containing **HGTector analysis results**.
+- **`analyze_dir`**: Directory containing **HGTector2 analysis results**.
 - **`final_results`**: Directory where the **merged results CSV** will be stored.
 
 ## Workflow Rules
@@ -105,7 +105,7 @@ Ensures the final merged CSV file is generated.
 
 ### 2. `merge_txt_to_csv`
 - Detects all **genome-specific result files** dynamically.
-- Extracts **Protein_ID, Score, and Taxonomy_ID** from `.txt` files.
+- Extracts **Protein_ID, silhouette score, and Taxonomy_ID** from `.txt` files.
 - Adds genome-specific headers for clarity.
 - Merges all results into **`merged_results.csv`** in `final_results`.
 
@@ -131,7 +131,7 @@ This Snakemake workflow enhances **HGTector2 results** by adding **gene names** 
 
 ## Key Directories
 
-- **`input_dir`**: Directory containing **FAA annotation files**.
+- **`input_dir`**: Directory containing **.faa files**.
 - **`merged_csv`**: Input **CSV file** before annotation expansion.
 - **`final_csv`**: Output **CSV file** after annotation expansion.
 
@@ -146,7 +146,7 @@ Ensures the final annotated CSV file is generated.
 - Reads **merged HGTector2 results**.
 - Extracts **gene names** and **product descriptions** from `.faa` files included in the fasta header
 - Maps annotations to corresponding **Protein\_IDs**.
-- Saves the final **annotated CSV** in `final_csv`.
+- Saves the final **enriched CSV** in `final_csv`.
 
 ## Usage
 
