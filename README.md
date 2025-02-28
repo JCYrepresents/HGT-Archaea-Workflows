@@ -25,7 +25,43 @@ This project integrates **HGTector2** for taxonomic HGT classification and **Isl
 - The workflow is optimized for analyzing **large-scale metagenomic datasets**.  
 - Outputs include **HGT predictions, putative donors, functional annotations, and genomic island reports**, with accompanying visualizations (scatter plots, KDE distributions, and GI maps).  
 
+## System Requirements
+
+To install and run HGTector2, ensure your system meets the following requirements:
+
+- **Operating System**: Linux
+- **Storage**: Minimum of 10 GB free disk space + addiotnal space for the reference database
+- **Python Version**: Python 3.6 or higher
 ## Overview documentation
+# HGTector2 Requirements
+
+## Software Dependencies
+
+HGTector2 relies on several external software packages. Before installation, ensure the following dependencies are available:
+
+- **Conda**: For package and environment management
+- **DIAMOND**: High-performance sequence aligner
+- **Snakemake**: Workflow management tool (*Must be installed in the base Conda environment, not in the HGTector2 environment*)
+- **Python Packages**:
+  - PyYAML
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - **Biopython** (for the helper scripts)
+
+## Installation Instructions
+
+1. Install Snakemake (In Base Conda Environment)
+
+Snakemake should be installed **in the base Conda environment** to properly manage workflows:
+   ```bash
+   conda install -n base -c conda-forge snakemake
+   ```
+
+2. **Set Up Conda Environment**:
+
+   ```bash
+   conda create -n hgtector -c conda-forge python=3.6 pyyaml pandas matplotlib scikit-learn biopython bioconda::diamond
 
 
 ## Installation & Usage  
