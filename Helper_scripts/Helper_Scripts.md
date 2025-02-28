@@ -25,7 +25,7 @@ python GFF_to_FAA.py <input_directory> <output_directory> <log_file>
 This script processes **GFF files** by extracting **CDS sequences**, translating them into **proteins**, and saving them as **FASTA (.faa) files**. It uses Biopython to handle sequence parsing and translation. The script allows **batch processing** of multiple files and generates a log file to track missing sequences or errors. Only **CDS** entries are processed, and if a sequence ID is not found in the FASTA section of the GFF, a warning is logged.
 
 
-## Include Lineage
+### Include Lineage
 This script integrates **genome lineage information** into **HGTector results** by extracting genome names, mapping them to their lineage, and updating the **HGTector output**
 
 ### Usage
@@ -47,7 +47,7 @@ python hgtector_lineage_mapper.py
 - Lineage info is applied only to **header rows**.
 - Ensure input files are correctly formatted.
 
-## for IslandViewer4:
+### for IslandViewer4:
 
 ### GFF to GBK Converter
 This script converts **GFF annotations** and associated **FASTA sequences** into a structured **GenBank (.gbk) file** by incorporating gene names, locus tags, and product descriptions.
@@ -126,7 +126,9 @@ directory_path = "/path/to/your/tsv/files/"
 - Headers are added as `## Genome_Name ##` before each dataset.
 - Empty files are skipped to prevent errors.
 
-## HGTector-IslandViewer Results Merger
+## For both:
+
+### HGTector-IslandViewer Results Merger
 
 This script refines and merges **HGTector results** with **IslandViewer4 predictions**, ensuring accurate mapping of protein IDs and genome lineage data.
 
