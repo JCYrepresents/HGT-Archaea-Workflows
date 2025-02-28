@@ -31,7 +31,7 @@ This script submits genome files to the **IslandViewer4** server for genomic isl
   - `Content-Type`: Multipart encoding type.
   - `x-authtoken`: API authentication token (retrieved by logging into IslandViewer).  
 
-### Running the Script
+### Running the Script for a single Genome
 
 Run the script manually with:
 
@@ -53,7 +53,7 @@ Ensures all **IslandViewer outputs** are generated.
 
 ## Usage
 
-Run Snakemake with:
+Run Snakemake for a batch of genomes with:
 
 ```bash
 snakemake -s IslandWorkflow.smk --configfile path/to/config_islandviewer.yaml
